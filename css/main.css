@@ -1,0 +1,42 @@
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px auto;
+      grid-template-columns: 300px auto;
+  background-color: burlywood;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 100px;
+  height: 500px;
+}
+
+.front {
+  display: none;
+  border: solid black 1px;
+}
+
+.flipped .front, .matched .front {
+  display: block;
+  border: solid black 1px;
+}
+
+.flipped .back, .matched .back {
+  display: none;
+  border: solid black 1px;
+}
+
+.card {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.score {
+  margin-left: 5px;
+}
+/*# sourceMappingURL=main.css.map */
